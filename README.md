@@ -6,6 +6,8 @@
 
 Aplicação web bilíngue de operações de acesso. Reúne a consulta de identidades e grupos do Microsoft Entra ID, chamados aprovados no ServiceNow e registros operacionais em uma interface com a identidade visual da Flextrix. Este projeto tem repositório próprio e deriva do [IdentityOps Platform](https://github.com/GabrielGrans/identityops-platform).
 
+**[Instalação Windows](docs/WINDOWS.md)**
+
 ## Telas
 
 | Entrada Flextrix | Cadastro de usuário do Entra ID |

@@ -6,6 +6,8 @@
 
 A bilingual web application for access operations. It brings Microsoft Entra ID directory lookups, approved ServiceNow requests, and operational logs into a workspace styled for Flextrix. This project lives in its own repository and builds on [IdentityOps Platform](https://github.com/GabrielGrans/identityops-platform).
 
+**[Windows installation](docs/WINDOWS.md)**
+
 ## Screenshots
 
 | Flextrix sign-in | Entra ID user registration |
