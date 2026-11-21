@@ -1,0 +1,35 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Flextrix Access",
+  "version": "1.5.0",
+  "identifier": "com.flextrix.access",
+  "build": {
+    "beforeDevCommand": "npm run dev -- --host 127.0.0.1 --port 5173 --strictPort",
+    "devUrl": "http://127.0.0.1:5173",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Flextrix Access | ServiceNow Integration",
+        "width": 1280,
+        "height": 800
+      }
+    ],
+    "security": {
+      "capabilities": ["local-api"],
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost; object-src 'none'; base-uri 'none'; form-action 'none'"
+    }
+  },
+  "plugins": {
+    "http": { "scopeRedirects": true }
+  },
+  "bundle": {
+    "active": true,
+    "publisher": "Gabriel Grans",
+    "targets": ["nsis"],
+    "icon": ["icons/icon.ico"]
+  }
+}
